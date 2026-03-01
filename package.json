@@ -1,0 +1,37 @@
+{
+    "name": "chrome-cookie-cleaner",
+    "version": "0.1.0",
+    "description": "Cookie cleanup utilities for Chrome extensions — clear by domain, age, type, and schedule automatic cookie cleaning for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "cookie",
+        "cleanup",
+        "privacy",
+        "clear",
+        "manifest-v3",
+        "browser-extension",
+        "tracker",
+        "auto-clean"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-cookie-cleaner.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
